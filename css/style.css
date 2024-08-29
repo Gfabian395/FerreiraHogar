@@ -6,7 +6,7 @@
   font-weight: 500;
   font-style: normal;
 }
-
+ 
 :root {
   --item1-transform: translateX(-100%) translateY(-5%) scale(1.5);
   --item1-filter: blur(30px);
