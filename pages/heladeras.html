@@ -1,54 +1,213 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Grupo Fereira | Productos</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Fereira | Heladeras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Grupo Ferreira Hogar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../asset/oficial PNG-PhotoRoom.png" width="80px"
+                        alt=""> Grupo Ferreira Hogar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vendedores</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Cocinas</a></li>
-                                <li><a class="dropdown-item" href="#">Heladeras</a></li>
-                                <li><a class="dropdown-item" href="#">Smartphones</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img
+                                src="./asset/oficial PNG-PhotoRoom.png" width="80px" alt="">Menù</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/vendedores.html">Vendedores</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/cocinas.html">Cocinas</a></li>
+                                    <li><a class="dropdown-item" href="../pages/heladeras.html">Heladeras</a></li>
+                                    <li><a class="dropdown-item" href="../pages/articulosCocina.html">Articulos de
+                                            cocina</a></li>
+                                    <li><a class="dropdown-item" href="../pages/sommier.html">Sommier</a></li>
+                                    <li><a class="dropdown-item" href="../pages/smartTv.html">Smart Tv</a></li>
+                                    <li><a class="dropdown-item" href="../pages/smartphones.html">Smartphones</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Desarrollador</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+
+    <main>
+        <div class="carousel">
+            <div class="list">
+                <div class="item">
+                    <img src="../asset/HELADERAS/B-Heladera-Ciclica-Drean-HDR370F00B-2.png">
+                    <div class="introduce">
+                        <div class="title"> BRIKET </div>
+                        <div class="topic"> 1310 </div>
+                        <div class="des">
+                            La <strong>Heladera Familiar con Freezer Briket 250 Lts</strong> ofrece un equilibrio ideal
+                            entre capacidad y funcionalidad, con un diseño práctico que se adapta a cualquier cocina.
+                        </div>
+                        <button class="seeMore">Más Detalles &#8599</button>
+                    </div>
+                    <div class="detail">
+                        <div class="title">Briket 1310</div>
+                        <div class="des">
+                            <h2>Características principales:</h2>
+                            <ul>
+                                <li><strong>Capacidad total:</strong> 250 litros, perfecta para familias medianas.</li>
+                                <li><strong>Freezer integrado:</strong> Congelador superior para alimentos congelados.</li>
+                                <li><strong>Diseño eficiente:</strong> Espacio organizado para un acceso fácil a tus
+                                    alimentos.</li>
+                                <li><strong>Color blanco:</strong> Acabado neutro que combina con cualquier decoración.</li>
+                            </ul>
+
+                            <h2>Medidas:</h2>
+                            <ul>
+                                <li><strong>Ancho:</strong> [Agregar ancho]</li>
+                                <li><strong>Alto:</strong> [Agregar alto]</li>
+                            </ul>
+
+                            <h2>Incluye:</h2>
+                            <ul>
+                                <li>Estantes ajustables.</li>
+                                <li>Compartimentos para frutas y verduras.</li>
+                            </ul>
+                        </div>
+                        <div class="checkout">
+                            <button>COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../asset/HELADERAS/Briket.png">
+                    <div class="introduce">
+                        <div class="title">BRIKET</div>
+                        <div class="topic">1320</div>
+                        <div class="des">
+                            La <strong>Heladera con Freezer Briket BK2FPL 1320 ST</strong> en color plata combina
+                            elegancia y funcionalidad con una capacidad de 242 litros. Ideal para mantener tus alimentos
+                            frescos y organizados.
+                        </div>
+                        <button class="seeMore">Más Detalles &#8599</button>
+                    </div>
+                    <div class="detail">
+                        <div class="title">Briket 1320</div>
+                        <div class="des">
+                            <h2>Características principales:</h2>
+                            <ul>
+                                <li><strong>Capacidad total:</strong> 242 litros, con espacio suficiente para tus
+                                    necesidades.</li>
+                                <li><strong>Freezer incluido:</strong> Congelador en la parte superior para
+                                    alimentos congelados.</li>
+                                <li><strong>Eficiencia energética:</strong> Operación eficiente para ahorrar en consumo.
+                                </li>
+                            </ul>
+
+                            <h2>Medidas:</h2>
+                            <ul>
+                                <li><strong>Ancho:</strong> [Agregar ancho]</li>
+                                <li><strong>Alto:</strong> [Agregar alto]</li>
+                            </ul>
+
+                            <h2>Incluye:</h2>
+                            <ul>
+                                <li>Estantes ajustables.</li>
+                                <li>Compartimentos para frutas y verduras.</li>
+                            </ul>
+                        </div>
+                        <div class="checkout">
+                            <button>COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../asset/HELADERAS/HELADERAS.png">
+                    <div class="introduce">
+                        <div class="title">SAMSUNG</div>
+                        <div class="topic">Family Hub</div>
+                        <div class="des">
+                            La <strong>Heladera Samsung Side by Side RS27T5561 Family Hub</strong> en color negro
+                            combina tecnología avanzada y diseño moderno. Con capacidades inteligentes y un acabado
+                            elegante, es la opción ideal para una cocina contemporánea.
+                        </div>
+                        <button class="seeMore">Más Detalles &#8599</button>
+                    </div>
+                    <div class="detail">
+                        <div class="title">Samsung Family</div>
+                        <div class="des">
+                            <h2>Características principales:</h2>
+                            <ul>
+                                <li><strong>Family Hub:</strong> Pantalla táctil integrada para controlar funciones.
+                                </li>
+                                <li><strong>Capacidad amplia:</strong> Espacio generoso para almacenar y organizar.</li>
+                                <li><strong>Inverter Technology:</strong> Funcionamiento silencioso.</li>
+                                <li><strong>Diseño elegante:</strong> Acabado en color negro que aporta un toque
+                                    sofisticado.</li>
+                            </ul>
+
+                            <h2>Medidas:</h2>
+                            <ul>
+                                <li><strong>Ancho:</strong> [Agregar ancho]</li>
+                                <li><strong>Alto:</strong> [Agregar alto]</li>
+                            </ul>
+
+                            <h2>Incluye:</h2>
+                            <ul>
+                                <li>Compartimentos ajustables y estantes.</li>
+                                <li>Dispensador de agua y hielo.</li>
+                            </ul>
+                        </div>
+                        <div class="checkout">
+                            <button>COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <button id="prev">
+                    < </button>
+                        <button id="next">></button>
+                        <button id="back"> Volver &#8599 </button>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div class="marquee">
@@ -129,4 +288,5 @@
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

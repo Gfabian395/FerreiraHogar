@@ -4,52 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo Fereira | Productos</title>
+    <title>Grupo Fereira | Art. Cocina</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Grupo Ferreira Hogar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../asset/oficial PNG-PhotoRoom.png" width="80px"
+                        alt=""> Grupo Ferreira Hogar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/vendedores.html">Vendedores</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/cocinas.html"><img src="../asset/COCINAS/COCINAS.png" alt="" width="50px"> Cocinas</a></li>
-                                <li><a class="dropdown-item" href="../pages/heladeras.html"><img src="../asset/HELADERAS/HELADERAS.png" alt="" width="50px">Heladeras</a></li>
-                                <li><a class="dropdown-item" href="../pages/smartphones.html"><img src="../asset/SMARTPHONES/SMARTPHONES.png" alt="" width="50px">Smartphones</a></li>
-                                <li><a class="dropdown-item" href="../pages/smartTv.html"><img src="../asset/SMART-TV/SMART TV.png" alt="" width="50px">Smart tv</a></li>
-                                <li><a class="dropdown-item" href="../pages/sommier.html"><img src="../asset/SOMMIER/SOMMIER.png" alt="" width="50px">Sommier</a></li>
-                                <li><a class="dropdown-item" href="../pages/articulosCocina.html"><img src="../asset/ART-COCINA/ARTICULOS DE COCINA.png" alt="" width="50px">Articulos de cocina</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Desarrollador</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img
+                                src="./asset/oficial PNG-PhotoRoom.png" width="80px" alt="">Menù</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/vendedores.html">Vendedores</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/cocinas.html">Cocinas</a></li>
+                                    <li><a class="dropdown-item" href="../pages/heladeras.html">Heladeras</a></li>
+                                    <li><a class="dropdown-item" href="../pages/articulosCocina.html">Articulos de
+                                            cocina</a></li>
+                                    <li><a class="dropdown-item" href="../pages/sommier.html">Sommier</a></li>
+                                    <li><a class="dropdown-item" href="../pages/smartTv.html">Smart Tv</a></li>
+                                    <li><a class="dropdown-item" href="../pages/smartphones.html">Smartphones</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Desarrollador</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -61,49 +76,38 @@
                 <div class="item">
                     <img src="../asset/ART-COCINA/157132-1200-auto.png">
                     <div class="introduce">
-                        <div class="title"> FREIDORA DE AIRE </div>
-                        <div class="topic"> Oster </div>
+                        <div class="title"> OSTER </div>
+                        <div class="topic"> Freidora de aire </div>
                         <div class="des">
-                            <!-- 20 lorem -->
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos
-                            quidem atque et eligendi aperiam voluptates beatae maxime.
+                            La <strong>Freidora de Aire Oster de 4 Litros</strong> permite disfrutar de comidas
+                            crujientes con menos aceite. Su capacidad ideal para familias y su diseño compacto la hacen
+                            una herramienta práctica para la cocina moderna.
                         </div>
-                        <button class="seeMore">Detalles &#8599</button>
+                        <button class="seeMore">Más Detalles &#8599</button>
                     </div>
                     <div class="detail">
-                        <div class="title">Aerphone GHTK</div>
+                        <div class="title">Freidora de aire</div>
                         <div class="des">
-                            <!-- lorem 50 -->
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis
-                            nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia
-                            adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus
-                            architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium
-                            magnam nulla tenetur autem beatae.
-                        </div>
-                        <div class="specifications">
-                            <div>
-                                <p>Used Time</p>
-                                <p>6 hours</p>
-                            </div>
-                            <div>
-                                <p>Charging port</p>
-                                <p>Type-C</p>
-                            </div>
-                            <div>
-                                <p>Compatible</p>
-                                <p>Android</p>
-                            </div>
-                            <div>
-                                <p>Bluetooth</p>
-                                <p>5.3</p>
-                            </div>
-                            <div>
-                                <p>Controlled</p>
-                                <p>Touch</p>
-                            </div>
+                            <h2>Características principales:</h2>
+                            <ul>
+                                <li><strong>Capacidad de 4 litros:</strong> Espacio suficiente para cocinar porciones
+                                    generosas.</li>
+                                <li><strong>Funcionamiento sin aceite:</strong> Cocina alimentos crujientes con una
+                                    cantidad mínima de aceite.</li>
+                                <li><strong>Controles ajustables:</strong> Permite ajustar la temperatura y el tiempo de
+                                    cocción según tus necesidades.</li>
+                                <li><strong>Diseño compacto:</strong> Ahorra espacio en la cocina mientras ofrece un
+                                    rendimiento eficiente.</li>
+                            </ul>
+
+                            <h2>Incluye:</h2>
+                            <ul>
+                                <li>Canasta extraíble para fácil limpieza.</li>
+                                <li>Recetario con sugerencias de cocción.</li>
+                            </ul>
                         </div>
                         <div class="checkout">
-                            <button>CHECKOUT</button>
+                            <button>COMPRAR</button>
                         </div>
                     </div>
                 </div>
@@ -111,46 +115,35 @@
                 <div class="item">
                     <img src="../asset/ART-COCINA/157429-1200-auto.png">
                     <div class="introduce">
-                        <div class="title">LICUADORA</div>
-                        <div class="topic">Oster</div>
+                        <div class="title">OSTER</div>
+                        <div class="topic">Licuadora 4655</div>
                         <div class="des">
-                            <!-- 20 lorem -->
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos
-                            quidem atque et eligendi aperiam voluptates beatae maxime.
+                            La <strong>Licuadora Oster 4655</strong> en color plateado ofrece un rendimiento potente y
+                            versatilidad con su vaso de vidrio de 1.25 litros, ideal para preparar tus bebidas y batidos
+                            favoritos.
                         </div>
-                        <button class="seeMore">Detalles &#8599</button>
+                        <button class="seeMore">Más Detalles &#8599</button>
                     </div>
                     <div class="detail">
-                        <div class="title">Heladera Samsung</div>
+                        <div class="title">Licuadora Oster</div>
                         <div class="des">
-                            <!-- lorem 50 -->
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis
-                            nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia
-                            adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus
-                            architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium
-                            magnam nulla tenetur autem beatae.
-                        </div>
-                        <div class="specifications">
-                            <div>
-                                <p>Capasidad</p>
-                                <p>6 hours</p>
-                            </div>
-                            <div>
-                                <p>Sistema</p>
-                                <p>Type-C</p>
-                            </div>
-                            <div>
-                                <p>Android</p>
-                                <p>Android</p>
-                            </div>
-                            <div>
-                                <p>Bluetooth</p>
-                                <p>5.3</p>
-                            </div>
-                            <div>
-                                <p>Controlled</p>
-                                <p>Touch</p>
-                            </div>
+                            <h2>Características principales:</h2>
+                            <ul>
+                                <li><strong>Potencia de 600W:</strong> Rendimiento eficiente para licuar y mezclar con
+                                    facilidad.</li>
+                                <li><strong>3 velocidades:</strong> Permite ajustar la mezcla según tus necesidades.
+                                </li>
+                                <li><strong>Vaso de vidrio:</strong> Capacidad de 1.25 litros, resistente y fácil de
+                                    limpiar.</li>
+                                <li><strong>Color plateado:</strong> Diseño moderno que se adapta a cualquier cocina.
+                                </li>
+                            </ul>
+
+                            <h2>Incluye:</h2>
+                            <ul>
+                                <li>Vaso de vidrio de 1.25 litros.</li>
+                                <li>Tapa con abertura para agregar ingredientes.</li>
+                            </ul>
                         </div>
                         <div class="checkout">
                             <button>COMPRAR</button>
@@ -161,56 +154,45 @@
                 <div class="item">
                     <img src="../asset/ART-COCINA/ARTICULOS DE COCINA.png">
                     <div class="introduce">
-                        <div class="title">BATIDORA PLANETARIA</div>
-                        <div class="topic">Oster</div>
+                        <div class="title">OSTER</div>
+                        <div class="topic">Batidora Planetaria</div>
                         <div class="des">
-                            <!-- 20 lorem -->
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos
-                            quidem atque et eligendi aperiam voluptates beatae maxime.
+                            La <strong>Batidora Planetaria Oster 3711</strong> en color negro combina diseño elegante y
+                            alta funcionalidad. Ideal para mezclar, batir y amasar con facilidad en tu cocina.
                         </div>
-                        <button class="seeMore">Detalles &#8599</button>
+                        <button class="seeMore">Más Detalles &#8599</button>
                     </div>
                     <div class="detail">
-                        <div class="title">Aerphone GHTK</div>
+                        <div class="title">Oster Planetaria</div>
                         <div class="des">
-                            <!-- lorem 50 -->
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis
-                            nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia
-                            adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus
-                            architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium
-                            magnam nulla tenetur autem beatae.
-                        </div>
-                        <div class="specifications">
-                            <div>
-                                <p>Used Time</p>
-                                <p>6 hours</p>
-                            </div>
-                            <div>
-                                <p>Charging port</p>
-                                <p>Type-C</p>
-                            </div>
-                            <div>
-                                <p>Compatible</p>
-                                <p>Android</p>
-                            </div>
-                            <div>
-                                <p>Bluetooth</p>
-                                <p>5.3</p>
-                            </div>
-                            <div>
-                                <p>Controlled</p>
-                                <p>Touch</p>
-                            </div>
+                            <h2>Características principales:</h2>
+                            <ul>
+                                <li><strong>Frecuencia de 50 Hz:</strong> Adecuada para el uso doméstico estándar.</li>
+                                <li><strong>Motor potente:</strong> Eficiencia en el mezclado y batido de ingredientes.
+                                </li>
+                                <li><strong>Diseño planetario:</strong> Garantiza una mezcla uniforme al girar en
+                                    múltiples direcciones.</li>
+                                <li><strong>Color negro:</strong> Estilo moderno y versátil que complementa cualquier
+                                    cocina.</li>
+                            </ul>
+
+                            <h2>Incluye:</h2>
+                            <ul>
+                                <li>Accesorios para batir, mezclar y amasar.</li>
+                                <li>Recipiente de acero inoxidable.</li>
+                            </ul>
                         </div>
                         <div class="checkout">
-                            <button>CHECKOUT</button>
+                            <button>COMPRAR</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="arrows">
-                <button id="prev"> < </button>
-                <button id="next">></button>
+                <button id="prev">
+                    < </button>
+                        <button id="next">></button>
+                        <button id="back"> Volver &#8599 </button>
             </div>
         </div>
     </main>

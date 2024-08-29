@@ -4,113 +4,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo Fereira | Productos</title>
+    <title>Grupo Fereira | Vendedores</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconect"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Grupo Ferreira Hogar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="../index.html"><img src="../asset/oficial PNG-PhotoRoom.png" width="80px"
+                        alt=""> Grupo Ferreira Hogar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vendedores</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../pages/cocinas.html"><img
-                                            src="../asset/COCINAS/COCINAS.png" alt="" width="50px"> Cocinas</a></li>
-                                <li><a class="dropdown-item" href="../pages/heladeras.html"><img
-                                            src="../asset/HELADERAS/HELADERAS.png" alt="" width="50px">Heladeras</a>
-                                </li>
-                                <li><a class="dropdown-item" href="../pages/smartphones.html"><img
-                                            src="../asset/SMARTPHONES/SMARTPHONES.png" alt=""
-                                            width="50px">Smartphones</a></li>
-                                <li><a class="dropdown-item" href="../pages/smartTv.html"><img
-                                            src="../asset/SMART-TV/SMART TV.png" alt="" width="50px">Smart tv</a></li>
-                                <li><a class="dropdown-item" href="../pages/sommier.html"><img
-                                            src="../asset/SOMMIER/SOMMIER.png" alt="" width="50px">Sommier</a></li>
-                                <li><a class="dropdown-item" href="../pages/articulosCocina.html"><img
-                                            src="../asset/ART-COCINA/ARTICULOS DE COCINA.png" alt=""
-                                            width="50px">Articulos de cocina</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Desarrollador</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img
+                                src="../asset/oficial PNG-PhotoRoom.png" width="80px" alt="">Menù</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/vendedores.html">Vendedores</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/cocinas.html">Cocinas</a></li>
+                                    <li><a class="dropdown-item" href="../pages/heladeras.html">Heladeras</a></li>
+                                    <li><a class="dropdown-item" href="../pages/articulosCocina.html">Articulos de
+                                            cocina</a></li>
+                                    <li><a class="dropdown-item" href="../pages/sommier.html">Sommier</a></li>
+                                    <li><a class="dropdown-item" href="../pages/smartTv.html">Smart Tv</a></li>
+                                    <li><a class="dropdown-item" href="../pages/smartphones.html">Smartphones</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Desarrollador</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="radial">
-            <ul class="menu active">
-                <li style="--i: 0; --clr: #ff2971">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/40" alt="Imagen 1" />
-                        <span>Nombre 1</span>
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li style="--i: 1; --clr: #fee800">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/40" alt="Imagen 2" />
-                        <span>Nombre 2</span>
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li style="--i: 2; --clr: #04fc43">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/40" alt="Imagen 3" />
-                        <span>Nombre 3</span>
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li style="--i: 3; --clr: #fe00f1">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/40" alt="Imagen 4" />
-                        <span>Nombre 4</span>
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li style="--i: 4; --clr: #00b0fe">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/40" alt="Imagen 5" />
-                        <span>Nombre 5</span>
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li style="--i: 5; --clr: #fea600">
-                    <a href="#">
-                        <img src="https://via.placeholder.com/40" alt="Imagen 6" />
-                        <span>Nombre 6</span>
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-            </ul>
+        <div class="mainFlex">
+            <div class="wrapper">
+
+                <div class="card">
+                    <div class="poster"><img src="../asset/1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h1>VANESA</h1>
+                        <div class="tags">
+                            <span class="tag">Rapida</span>
+                            <span class="tag">Confiable</span>
+                            <span class="tag">Simple</span>
+                        </div>
+                        <p class="desc">
+                            Vanesa es una vendedora rápida, confiable y simple, ofreciendo un servicio ágil y sin
+                            complicaciones.
+                        </p>
+                        <div class="cast">
+                            <h3>CONTACTAR</h3>
+                            <div class="icon">
+                                <a href="https://wa.me/+5401138002078">
+                                    <svg height="80" width="80">
+                                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none">
+                                        </circle>
+                                    </svg>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="poster"><img src="../asset/1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h1>CAROLINA</h1>
+                        <div class="tags">
+                            <span class="tag">Honesta</span>
+                            <span class="tag">Resolutiva</span>
+                            <span class="tag">Narrativa</span>
+                        </div>
+                        <p class="desc">
+                            Carolina es una vendedora honesta, resolutiva y narrativa, proporcionando soluciones claras y efectivas.
+                        </p>
+                        <div class="cast">
+                            <h3>CONTACTAR</h3>
+                            <div class="icon">
+                                <a href="https://wa.me/+5401163083159">
+                                    <svg height="80" width="80">
+                                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none">
+                                        </circle>
+                                    </svg>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="poster"><img src="../asset/1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h1>YULISA</h1>
+                        <div class="tags">
+                            <span class="tag">Atenta</span>
+                            <span class="tag">Adaptable</span>
+                            <span class="tag">Positiva</span>
+                        </div>
+                        <p class="desc">
+                            Yulisa es una vendedora atenta, adaptable y positiva, ofreciendo un servicio flexible y optimista.
+                        </p>
+                        <div class="cast">
+                            <h3>CONTACTAR</h3>
+                            <div class="icon">
+                                <a href="https://wa.me/+54011">
+                                    <svg height="80" width="80">
+                                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none">
+                                        </circle>
+                                    </svg>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="poster"><img src="../asset/1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h1>FRANCO</h1>
+                        <div class="tags">
+                            <span class="tag">Empático</span>
+                            <span class="tag">Simpático</span>
+                            <span class="tag">Optimista</span>
+                        </div>
+                        <p class="desc">
+                            Franco es un vendedor empático, simpático y optimista, que siempre ofrece un trato amigable y positivo.
+                        </p>
+                        <div class="cast">
+                            <h3>CONTACTAR</h3>
+                            <div class="icon">
+                                <a href="https://wa.me/+5401125538824">
+                                    <svg height="80" width="80">
+                                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none">
+                                        </circle>
+                                    </svg>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="poster"><img src="../asset/1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h1>CARMEN</h1>
+                        <div class="tags">
+                            <span class="tag">Italian</span>
+                            <span class="tag">Drama</span>
+                            <span class="tag">Indie</span>
+                        </div>
+                        <p class="desc">
+                            Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search
+                            for
+                            meaning.
+                        </p>
+                        <div class="cast">
+                            <h3>CONTACTAR</h3>
+                            <div class="icon">
+                                <a href="https://wa.me/+5401128466001">
+                                    <svg height="80" width="80">
+                                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none">
+                                        </circle>
+                                    </svg>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="poster"><img src="../asset/1.png" alt="">
+                    </div>
+                    <div class="details">
+                        <h1>GUSTAVO</h1>
+                        <div class="tags">
+                            <span class="tag">Paciente</span>
+                            <span class="tag">Comunicativo</span>
+                            <span class="tag">Resolutivo</span>
+                        </div>
+                        <p class="desc">
+                            Gustavo es un vendedor paciente, comunicativo y resolutivo, brindando soluciones claras y con gran capacidad de escucha.
+                        </p>
+                        <div class="cast">
+                            <h3>CONTACTAR</h3>
+                            <div class="icon">
+                                <a href="https://wa.me/+5401165922180">
+                                    <svg height="80" width="80">
+                                        <circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none">
+                                        </circle>
+                                    </svg>
+                                    <i class='bx bxl-whatsapp'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>
 
@@ -184,6 +320,7 @@
         </div>
         <p>Grupo Ferreira Hogar© 2024. Todos los derechos reservados. | by: BullScript.</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
